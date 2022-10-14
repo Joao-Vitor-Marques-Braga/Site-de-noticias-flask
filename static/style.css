@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.cabecalho{
+    width: 100%;
+    height: 100%;
+    background-color: #C4170C;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+}
+.cabecalho h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.cabecalho a{
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho a:hover{
+    color: white;
+}
+
+.corpo{
+    width: 85%;
+    margin: 30px auto;
+}
+
+.corpo h1{
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.corpo h2{
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.corpo h3{
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+.formulario{
+    width: 80%;
+    margin: 30px auto;
+}
