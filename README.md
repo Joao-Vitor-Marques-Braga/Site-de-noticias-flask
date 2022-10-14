@@ -1,2 +1,2 @@
-# Site-de-not-cias
-Site de notícias variadas feito em HTML com aplicações de JavaScript.
+# Site-de-noticias
+Site de notícias desenvolvido em html, css e como servidor o framework Flask, o site não contém a presença de banco de dados, logo cada notícia deve ser adicionada e quando o servidor é fechado todas as notícias adicionadas são apagadas.
