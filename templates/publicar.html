@@ -16,6 +16,18 @@
       </div>
     </header>
 
+    <div>
+      {% with  messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul class="flashes">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+      {% endwith %}
+    </div>
+
     <section>
         <form class="formulario" action="inserir" method="post">
             <div class="mb-3">

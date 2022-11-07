@@ -24,19 +24,20 @@
     </header>
 
     <section class="corpo">
+    {%for i in lista%}
         <!--Título da Matéria-->
         <h1>
-          {{lista[0].titulo}}
+          {{i.titulo}}
         </h1>
 
         <!--Descrição da Matéria-->
         <h2>
-          {{lista[0].descrição}}
+          {{i.descrição}}
         </h2>
 
         <!--Texto da Matéria-->
         <p>
-          {{lista[0].materia}}  
+          {{i.materia}}  
         </p>
 
         <!--Imagens-->
@@ -48,13 +49,13 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="{{lista[0].imagem1}}" class="d-block w-100" alt="...">
+              <img src="{{i.imagem1}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="{{lista[0].imagem2}}" class="d-block w-100" alt="...">
+              <img src="{{i.imagem2}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="{{lista[0].imagem3}}" class="d-block w-100" alt="...">
+              <img src="{{i.imagem3}}" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -69,8 +70,9 @@
 
         <!--Autor da Matéria-->
         <h3>
-          {{lista[0].autor}}
+          {{i.autor}}
         </h3>
+      {%endfor%}
     </section>
 
     <script
